@@ -126,8 +126,8 @@ img {
     }
     input[type=search]:focus {
         width: 100%;
-        border: 2px solid green;
-        outline: 2px solid green;
+        border: 2px solid rgb(143, 209, 143);
+        outline: 2px solid rgb(70, 173, 70);
     }
     .br {
         line-height: 1200px;
