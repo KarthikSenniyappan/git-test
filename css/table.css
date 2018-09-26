@@ -1,0 +1,66 @@
+#customers {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(173, 173, 238);
+    color: rgb(51, 49, 49);
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+
+/* End Here */
+
+
+/* responsive */
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    #customers {
+        width: 95%;
+    }
+    #customers td,
+    #customers th {
+        border: 1px solid #ddd;
+        padding: 4px;
+    }
+    #customers th {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    #customers {
+        width: 40%;
+        margin-left: 25px;
+    }
+    #customers td,
+    #customers th {
+        border: 1px solid #ddd;
+        padding: 0;
+    }
+    #customers th {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+}

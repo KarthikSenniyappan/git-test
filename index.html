@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="icon" href="img/icon.png">
+    <script src="js/style.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <p><span class="blue">ST<span class="red">A</span>R SYST<span class="red">E</span>MS</span>
+        </p>
+        <p><input type="search" placeholder="Search"></p>
+    </div>
+    <ul>
+        <li>
+            <a href="#" class="active"><img src="img/home.png"><span class="link">Home</span></a>
+        </li>
+        <li>
+            <a href="personal.html"><img src="img/personal.png"><span class="link">Personal Details</span></a>
+        </li>
+        <li>
+            <a href="education.html"><img src="img/edu.png"><span class="link">Education Details</span></a>
+        </li>
+        <li>
+            <span class="br">
+                <a href="#" id="demo"><img src="img/exit.png"><span class="link">Logout</span></a>
+            </span>
+        </li>
+    </ul>
+
+    <div class="main">
+        <table id="customers">
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+                <th>More Details</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+                <td><button id="myBtn" class="buttonlink" onclick="one()">View</button></td>
+            </tr>
+            <tr>
+                <td>Berglunds snabbköp</td>
+                <td>Christina Berglund</td>
+                <td>Sweden</td>
+                <td><button id="myBtn" onclick="one()" class="buttonlink">View</button></td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+                <td><button id="myBtn" onclick="one()" class="buttonlink">View</button></td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+                <td><button id="myBtn" onclick="one()" class="buttonlink">View</button></td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+                <td><button id="myBtn" onclick="one()" class="buttonlink">View</button></td>
+            </tr>
+            <tr>
+                <td>Königlich Essen</td>
+                <td>Philip Cramer</td>
+                <td>Germany</td>
+                <td><button id="myBtn" onclick="one()" class="buttonlink">View</button></td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+                <td><button id="myBtn" onclick="one()" class="buttonlink">View</button></td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+                <td><button id="myBtn" onclick="one()" class="buttonlink">View</button></td>
+            </tr>
+            <tr>
+                <td>North/South</td>
+                <td>Simon Crowther</td>
+                <td>UK</td>
+                <td><button id="myBtn" onclick="one()" class="buttonlink">View</button></td>
+            </tr>
+            <tr>
+                <td>Paris spécialités</td>
+                <td>Marie Bertrand</td>
+                <td>France</td>
+                <td><button id="myBtn" onclick="one()" class="buttonlink">View</button></td>
+            </tr>
+        </table>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" onclick="span()">&times;</span>
+                    <h2>Modal Header</h2>
+                </div>
+                <div class="modal-body">
+                    <!-- Table and Style containig font family -->
+                    <!-- class for manage resposive -->
+                    <table style="font-family: Georgia, 'Times New Roman', Times, serif;" class="modaltable">
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Savings</th>
+                        </tr>
+                        <tr>
+                            <td>Peter</td>
+                            <td>Griffin</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>Lois</td>
+                            <td>Griffin</td>
+                            <td>$150</td>
+                        </tr>
+                        <tr>
+                            <td>Joe</td>
+                            <td>Swanson</td>
+                            <td>$300</td>
+                        </tr>
+                        <tr>
+                            <td>Cleveland</td>
+                            <td>Brown</td>
+                            <td>$250</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <h3>Modal Footer</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

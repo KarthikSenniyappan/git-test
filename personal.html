@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/validation.css">
+    <link rel="icon" href="img/icon.png">
+    <script src="js/form.js"></script>
+    <title>Personal Details</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <p><span class="blue">ST<span class="red">A</span>R SYST<span class="red">E</span>MS</span>
+        </p>
+        <p><input type="search" placeholder="Search"></p>
+    </div>
+    <ul>
+        <li>
+            <a href="index.html"><img src="img/home.png"><span class="link">Home</span></a>
+        </li>
+        <li>
+            <a href="#" class="active"><img src="img/personal.png"><span class="link">Personal Details</span></a>
+        </li>
+        <li>
+            <a href="education.html"><img src="img/edu.png"><span class="link">Education Details</span></a>
+        </li>
+        <li>
+            <span class="br">
+                    <a href="#" id="demo"><img src="img/exit.png"><span class="link">Logout</span></a>
+            </span>
+        </li>
+    </ul>
+
+    <div class="main">
+        <div class="form">
+            <!-- Personal Details form -->
+            <form>
+                <div id="norm">
+                    <label>Username<sup class="red">*</sup></label>
+                    <input type="text" name="username" autocomplete="off" id="username" placeholder="Your Name...">
+                    <span id="spanname" class="invis"><p id="infoname"></p></span>
+                    <label for="dob">Date of birth<sup class="red">*</sup></label>
+                    <input type="date" id="dob" name="dob">
+                    <label>E-mail<sup class="red">*</sup></label>
+                    <input type="text" name="email" id="publicemail" placeholder="E-mail">
+                    <span id="spanemail" class="invis"><p id="infoemail"></p></span>
+                    <label>Mobile Number</label>
+                    <input type="text" name="phone" id="mobilenumber" title="Numbers only" placeholder="Mobile Number"><br>
+                    <span id="spannumber" class="invis"><p id="infonumber"></p></span>
+                    <label>Gender<sup class="red">*</sup></label>
+                </div>
+                <div id="check">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male" checked>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="others">Others</label><br>
+                    <input type="radio" name="gender" value="others" id="others">
+                </div>
+                <div id="norm">
+                    <br>
+                    <label for="relation">Relationship<sup class="red">*</sup></label>
+                    <select name="relation" id="relation">
+                                    <option value="Single">Single</option>
+                                    <option value="Engaged">Engaged</option>
+                                    <option value="Married">Married</option>
+                                    <option value="Widowed">Widowed</option>
+                                    <option value="Separated">Separated</option>
+                                    <option value="Divorced">Divorced</option>                    
+                                  </select>
+                    <label>Public Profile<sup class="red">*</sup></label>
+                    <input type="text" name="url" id="publicurl" placeholder="Ex Skype,Facebook">
+                    <span id="spanurl" class="invis"><p id="infourl"></p></span>
+                    <label>Address<sup class="red">*</sup></label>
+                    <textarea rows="8" cols="40" placeholder="Address with pin code"></textarea><br>
+                    <input type="submit" onclick="return formvalidate()" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

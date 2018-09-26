@@ -1,0 +1,16 @@
+.error {
+    font-size: 12px;
+    color: red;
+    margin-bottom: -20px;
+}
+
+.success {
+    color: green;
+    font-size: 5px;
+}
+
+.invis {
+    display: none;
+    clear: left;
+    margin-left: 230px;
+}

@@ -1,0 +1,241 @@
+/* Form style */
+
+.form {
+    margin-top: 15px;
+    background-color: #ccc;
+    height: 700px;
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px;
+    /*text-align: center;*/
+}
+
+
+/* Lable and input align */
+
+.form #norm label {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: #333;
+    height: 20px;
+    width: 200px;
+    margin-top: 17px;
+    margin-left: 10px;
+    text-align: right;
+    clear: both;
+    float: left;
+    margin-right: 15px;
+}
+
+
+/* style for input and select and etc... */
+
+.form input,
+textarea,
+select,
+input[type=color] {
+    width: 50%;
+    padding: 12px 14px;
+    border-radius: 5px;
+    border: 1px solid rgb(204, 204, 204);
+    margin-top: 15px;
+    float: left;
+}
+
+
+/* Submit button style */
+
+.form input[type=submit] {
+    position: relative;
+    font-size: 20px;
+    width: 15%;
+    padding: 2%;
+    margin: 2% 0;
+    color: black;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*reset button style */
+
+.form input[type=reset] {
+    position: relative;
+    font-size: 20px;
+    width: 15%;
+    padding: 2%;
+    margin: 2% 0;
+    color: black;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* button position */
+
+.form input[type=reset],
+.form input[type=submit] {
+    float: right;
+    overflow: hidden;
+    margin: 20px;
+}
+
+
+/* button hover color */
+
+.form input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: rgba(74, 74, 109, 0.808);
+}
+
+
+/* Green color style for focus */
+
+.form input:focus,
+select:focus,
+textarea:focus {
+    border-radius: 5px;
+    border: 1px solid green;
+    outline: 1px solid green;
+}
+
+
+/* Disabling style for button and color and checkbox and radio focus */
+
+
+/* Start Here */
+
+.form input[type=radio]:focus,
+input[type=checkbox]:focus {
+    border-radius: 0px;
+    border: 0;
+    outline: 0;
+}
+
+.form input[type=color]:focus,
+input[type=color] {
+    padding: 0px 0px;
+    margin: 0px 0;
+    display: inline-block;
+    border-radius: 0px;
+    border: 0;
+    box-sizing: border-box;
+    width: 20%;
+}
+
+.form input[type=radio]:focus,
+input[type=checkbox]:focus {
+    border-radius: 0px;
+    border: 0;
+    outline: 0;
+}
+
+.form input[type=submit]:focus,
+input[type=reset]:focus {
+    border: none;
+    outline: none;
+}
+
+
+/* Radio and Checkbox align */
+
+.form input[type=radio],
+input[type=checkbox] {
+    padding: 8px 0px;
+    margin: 20px 0;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 10%;
+}
+
+
+/* Radio and Checkbox lables align */
+
+.form #check label {
+    float: left;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #333;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .form {
+        height: 650px;
+        width: 450px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding: 2px;
+        /* text-align: center; */
+    }
+    .form #norm label {
+        font-size: 16px;
+        height: 10px;
+        width: 120px;
+        margin-top: 7px;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: right;
+        clear: both;
+        float: left;
+    }
+    .form #check label {
+        font-size: 10px;
+        margin-top: 9px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .form {
+        height: 650px;
+        width: 350px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding: 2px;
+        /* text-align: center; */
+    }
+    .form #norm label {
+        font-size: 13px;
+        height: 10px;
+        width: 120px;
+        margin-top: 7px;
+        margin-left: 18px;
+        margin-right: 5px;
+        text-align: right;
+        clear: both;
+        float: left;
+    }
+    .form #check label {
+        font-size: 10px;
+        margin-top: 9px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .form input[type=submit],
+    .form input[type=reset] {
+        font-size: 10px;
+    }
+}

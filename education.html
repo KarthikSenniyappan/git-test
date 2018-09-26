@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Details</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/validation.css">
+    <script src="js/edu.js"></script>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <p><span class="blue">ST<span class="red">A</span>R SYST<span class="red">E</span>MS</span>
+        </p>
+        <p><input type="search" placeholder="Search"></p>
+    </div>
+    <ul>
+        <li>
+            <a href="index.html"><img src="img/home.png"><span class="link">Home</span></a>
+        </li>
+        <li>
+            <a href="personal.html"><img src="img/personal.png"><span class="link">Personal Details</span></a>
+        </li>
+        <li>
+            <a href="#" class="active"><img src="img/edu.png"><span class="link">Education Details</span></a>
+        </li>
+        <li>
+            <span class="br">
+                    <a href="#" id="demo"><img src="img/exit.png"><span class="link">Logout</span></a>
+            </span>
+        </li>
+    </ul>
+
+    <div class="main">
+        <!-- Education Details Form -->
+
+        <div class="form">
+            <form>
+                <div id="norm">
+                    <label>10th Completed year<sup class="red">*</sup></label>
+                    <input type="month" id="ten" name="ten"><br>
+                    <span id="tenspanm" class="invis"><p id="infotenm"></p></span>
+                    <label>10th Register Number<sup class="red">*</sup></label>
+                    <input type="Number" name="tennumber" id="tennumber" placeholder="10th Register Number"><br>
+                    <span id="tenspan" class="invis"><p id="infoten"></p></span>
+                    <label>12th Completed year</label>
+                    <input type="month" name="twl"><br>
+                    <label>12th Register Number</label>
+                    <input type="Number" name="twlnumber" placeholder="12th Register Number"><br>
+                    <label>Diploma Completed year</label>
+                    <input type="month" name="diploma"><br>
+                    <label>Diploma Register Number</label>
+                    <input type="Number" name="diplomanumber" placeholder="Diploma Register Number"><br>
+                    <label>Institution Name<sup class="red">*</sup></label>
+                    <input type="text" class="depth" id="institution" name="institution" placeholder="School/College"><br>
+                    <span id="checkinstitution" class="invis"><p id="infoinstitution"></p></span>
+                    <label>Completed<sup class="red">*</sup></label>
+                </div>
+                <div id="check">
+                    <label for="pg">PG</label>
+                    <input type="checkbox" value="pg" id="pg" name="pg">
+                    <label for="ug">UG</label>
+                    <input type="checkbox" value="ug" id="ug" name="ug">
+                    <label for="dip">Diploma</label>
+                    <input type="checkbox" value="diploma" id="dip" name="dip">
+                </div>
+                <div id="norm">
+                    <span id="checkedu" class="invis"><p id="infocheck"></p></span>
+                    <label>About</label>
+                    <textarea rows="8" cols="40" name="about" placeholder="Something About Yourself"></textarea><br>
+                    <input type="submit" onclick="return validation()" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

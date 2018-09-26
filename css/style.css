@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+}
+
+ul {
+    height: 84%;
+    list-style-type: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+    width: 20%;
+    background-color: rgb(241, 241, 241);
+    position: fixed;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    color: rgb(97, 110, 167);
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(228, 228, 228);
+    color: white;
+}
+
+a:hover#demo {
+    background-color: rgb(241, 241, 241);
+    color: #000;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(239, 250, 255);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar p {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 0 16px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.main {
+    padding: 16px;
+    margin-top: 100px;
+    margin-left: 25%;
+    height: auto;
+}
+
+input[type=search] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../img/search-icon-png-2.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=search]:focus {
+    width: 80%;
+    border: 2px solid green;
+    outline: 2px solid green;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.link {
+    padding: 10px;
+    font-size: 20px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.br {
+    line-height: 800px;
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    ul {
+        height: 91%;
+        margin: -3px 0 0 0;
+        padding: 0;
+        width: 25%;
+    }
+    .link {
+        padding: 2px;
+        font-size: 15px;
+    }
+    .navbar p {
+        padding: 0 10px;
+        font-size: 30px;
+    }
+    input[type=search] {
+        width: 120px;
+        border: 2px solid #ccc;
+        background-image: none;
+        border-radius: 4px;
+        font-size: 10px;
+        background-position: 8px 8px;
+        padding: 8px 15px 8px 10px;
+    }
+    input[type=search]:focus {
+        width: 100%;
+        border: 2px solid green;
+        outline: 2px solid green;
+    }
+    .br {
+        line-height: 1200px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    ul {
+        height: 93%;
+        margin: -33px 0 0 0;
+        padding: 0;
+        width: 30%;
+    }
+    .link {
+        padding: 2px;
+        font-size: 10px;
+    }
+    .navbar p {
+        padding: 0 8px;
+        font-size: 20px;
+    }
+    input[type=search] {
+        width: 100px;
+        border: 1px solid #ccc;
+        background-image: none;
+        border-radius: 2px;
+        font-size: 8px;
+        background-position: 5px 5px;
+        padding: 6px 10px 6px 20px;
+    }
+    input[type=search]:focus {
+        width: 80%;
+        border: 2px solid green;
+        outline: 2px solid green;
+    }
+    .br {
+        line-height: 850px;
+    }
+}
