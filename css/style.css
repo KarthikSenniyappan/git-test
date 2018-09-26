@@ -79,7 +79,7 @@ input[type=search]:focus {
 }
 
 .red {
-    color: red;
+    color: rgb(247, 31, 31);
 }
 
 .blue {
