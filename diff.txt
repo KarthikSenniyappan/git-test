@@ -1,19 +1,45 @@
 diff --git a/date.txt b/date.txt
-index 8fd2c85..9f8d38d 100644
+index ca8c20f..8fd2c85 100644
 --- a/date.txt
 +++ b/date.txt
-@@ -1,6 +1 @@
--tree 2bedd6624a198b0d76c40d2caadf07b6558ad551
--parent a7bb9584545d2ed01ddeaacc4d4acd3edbc3289f
--author Karthik <karthik@star-systems.in> 1538025107 +0530
--committer Karthik <karthik@star-systems.in> 1538025107 +0530
--
--Testing
-+--date
+@@ -1,4 +1,4 @@
+-tree cd0d06ec70903b5dcbefa5ff7d85b4dfbc703549
+-parent 7530a6d766996b4cf685e0313922804226d4a97b
+-author Karthik <karthik@star-systems.in> 1538025282 +0530
+-committer Karthik <karthik@star-systems.in> 1538025282 +0530
++tree 2bedd6624a198b0d76c40d2caadf07b6558ad551
++parent a7bb9584545d2ed01ddeaacc4d4acd3edbc3289f
++author Karthik <karthik@star-systems.in> 1538025107 +0530
++committer Karthik <karthik@star-systems.in> 1538025107 +0530
+diff --git a/diff.txt b/diff.txt
+deleted file mode 100644
+index 892b670..0000000
+--- a/diff.txt
++++ /dev/null
+@@ -1,19 +0,0 @@
+-diff --git a/date.txt b/date.txt
+-index 8fd2c85..9f8d38d 100644
+---- a/date.txt
+-+++ b/date.txt
+-@@ -1,6 +1 @@
+--tree 2bedd6624a198b0d76c40d2caadf07b6558ad551
+--parent a7bb9584545d2ed01ddeaacc4d4acd3edbc3289f
+--author Karthik <karthik@star-systems.in> 1538025107 +0530
+--committer Karthik <karthik@star-systems.in> 1538025107 +0530
+--
+--Testing
+-+--date
+-diff --git a/karthik.txt b/karthik.txt
+-index 857d49a..aaa0c53 100644
+---- a/karthik.txt
+-+++ b/karthik.txt
+-@@ -1 +1 @@
+--7530a6d766996b4cf685e0313922804226d4a97b
+-+a7bb9584545d2ed01ddeaacc4d4acd3edbc3289f
 diff --git a/karthik.txt b/karthik.txt
-index 857d49a..aaa0c53 100644
+index e6a7618..857d49a 100644
 --- a/karthik.txt
 +++ b/karthik.txt
 @@ -1 +1 @@
--7530a6d766996b4cf685e0313922804226d4a97b
-+a7bb9584545d2ed01ddeaacc4d4acd3edbc3289f
+-c8c6d7c5dff04da87a1bfe8f3ed2eef7ac6cd69e
++7530a6d766996b4cf685e0313922804226d4a97b
